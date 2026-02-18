@@ -24,7 +24,7 @@ public class Main {
             throw new IllegalArgumentException("Expression cannot be null or empty");
         }
 
-        String[] stringRPN = expression.trim().split("\\s ");
+        String[] stringRPN = expression.split(" ");
 
         for(String s : stringRPN){
 
@@ -114,7 +114,7 @@ public class Main {
         Main m = new Main();
 
 
-        System.out.println(m.evaluateStr(" 2/"));
+        System.out.println(m.evaluateStr(" 2 3 /"));
 
     }
 }
