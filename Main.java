@@ -24,7 +24,7 @@ public class Main {
             throw new IllegalArgumentException("Expression cannot be null or empty");
         }
 
-        String[] stringRPN = expression.split(" ");
+        String[] stringRPN = expression.trim().split("\\s ");
 
         for(String s : stringRPN){
 
@@ -113,11 +113,8 @@ public class Main {
     public static void main(String[] args){
         Main m = new Main();
 
-        System.out.println(m.evaluateStr(" 2 /"));
-        System.out.println(m.evaluateStr("baaa"));
-        System.out.println(m.evaluateStr("0.2 0.1 +")); // floating point problem because IEEE-754
-        System.out.println(m.evaluateStr("2 3 "));
-        System.out.println(m.evaluateStr("2 0 /"));
+
+        System.out.println(m.evaluateStr(" 2/"));
 
     }
 }
