@@ -5,10 +5,7 @@ This program evaluates mathematical expressions written in **Reverse Polish Nota
 
 Reverse Polish Notation (also known as postfix notation) places operators after their operands.  
 
----
-The program includes validation, structured error handling, and floating-point rounding correction.
 
----
 
 ## How the Algorithm Works
 
